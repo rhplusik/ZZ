@@ -1,0 +1,293 @@
+body {
+  /* www.subtlepatterns.com */
+	background-image: url("img/tlo.png");
+	margin: 0px !important;
+	font-family: 'Source Sans Pro', sans-serif, Arial;
+}
+
+
+.wrapper {
+ width: 100%;
+}
+
+#header {
+	width: 940px;
+  padding: 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo {
+  /*font-family: 'Sans', serif;*/
+	color: #1C5311;
+  height: 100px;
+	margin-top: 20px;
+	font-size: 30px;
+  text-transform: uppercase;
+	letter-spacing: -0.5px;
+	font-weight: 600;
+}
+
+#navi {
+	background-color: #33CA2B; /* lub #222222 */
+	padding: 5px 0px; /* CW y x y x */
+	width: 100%;
+  text-align: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  line-height:300%;
+  -webkit-box-shadow: 0px 13px 37px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 13px 37px -11px rgba(0,0,0,0.75);
+  box-shadow: 0px 13px 37px -11px rgba(0,0,0,0.75);
+}
+
+ol.menu{
+	margin: 0;
+  padding: 0;
+  height: 30px;
+  list-style-type: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  display:inline-block; /* zamiast float:left - uklada w lini*/
+}
+
+ol a{
+  color: #164509; /* menu głowne */
+  text-decoration: none;
+  display: block;
+}
+
+ol.menu > li{
+  float: left;
+  width: 200px;
+  border-right: 1px solid #164509;
+}
+
+ol.menu > li:first-child {
+  border-left: 1px solid #164509;
+}
+
+ol.menu > li:hover{
+  background-color: gray;
+}
+
+ol.menu > li:hover > a{
+  color: #1C5311;
+}
+ol.menu > li > ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  display: none; /* ukrywa podmenu */
+}
+
+ol.menu > li:hover > ul{
+  display: block;  /* pokazanie podmenu */
+}
+
+ol.menu > li > ul > li{
+  background-color: #1C5311;
+  position: relative;
+  z-index: 100;
+  border-top: 1px solid gray;
+}
+
+ol.menu > li > ul > li:hover{
+  background-color: #3F505C;
+}
+
+ol.menu > li > ul > li a{
+  color: gray;
+}
+
+#topbar{
+  background-image: url(img/wall.jpg);
+  background-size: cover; /* skalowanie wg najkrotszego boku */
+  opacity: .6;
+  margin-bottom: 10px;
+  min-height: 720px;
+  display: flex;  /* w przypadku dwóch pragrafów dzieli na kolumny*/
+}
+
+.topbarcontent {
+  opacity: 1;
+  text-align: left;
+  padding: 70px 50px 0 200px;
+  line-height:80%;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+  line-height: 220%;
+  font-weight: 400;
+  font-size: 55px;
+  text-shadow:
+	4px 4px 5px gray,
+	-4px 4px 5px gray,
+	-4px -4px 5px gray,
+	4px -4px 5px gray;/*  x y wg cwiartek */
+
+}
+
+#container{
+  width: 964px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+
+.slaid{
+    text-align: center;
+    color: #222222;
+    width: 964px
+
+}
+
+.slaid h1{
+    color: #1C5311;
+}
+
+.contentitle{
+  width: 824px;
+  height: 180px;
+  margin: 0 70px 20px 70px;
+}
+
+.sidebar{
+  float: left;
+  width: 480px;
+  height: 296px;
+  margin: 1px;
+  opacity: .6;
+}
+
+.content {
+  float: left;
+  padding: 20px 50px 0 50px;
+  margin: 1px;
+  width: 380px;
+  height: 276px;
+  background-color: #E4EEF5;
+  opacity: .8;
+}
+
+.contenthisto {
+  float: left;
+  padding: 20px 20px 0 20px;
+  margin: 1px;
+  width: 279px;
+  height: 178px;
+  background-color: #E4EEF5;
+  color: #b8b8b8;
+  opacity: .8;
+}
+
+.contenthisto a{
+  color: #b8b8b8;
+  text-decoration: none;
+}
+
+.contenthisto a:hover{
+  color: #1C5311;
+}
+
+.poster {
+  background-image: url(img/zakretki-poster.jpg);
+  width: 964px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 1360px;
+}
+
+.postercontent {
+  text-align: left;
+  padding: 700px 50px 0 200px;
+  line-height:80%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #1C5311;
+  text-shadow:
+  1px 1px 0px #ccc,
+  -1px 1px 0px #ccc,
+  -1px -1px 0px #ccc,
+  1px -1px 0px #ccc;/*  x y wg cwiartek */
+}
+
+#social{
+  width: 100%;
+  text-align: center;
+  background-color: #1C5311;
+}
+
+.socialdivs{
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  color: #C5C6C7;
+}
+
+.fb{
+  float: left;
+  width: 240px;
+  height: 150px;
+}
+
+.fb:hover{
+  background-color: #4668b3;
+}
+
+.yt{
+  float: left;
+  width: 240px;
+  height: 150px;
+}
+
+.yt:hover{
+  background-color: #d94348;
+}
+
+.tw{
+  float: left;
+  width: 240px;
+  height: 150px;
+}
+
+.tw:hover{
+  background-color: #3095d3;
+}
+
+.gp{
+  float: left;
+  width: 240px;
+  height: 150px;
+}
+
+.gp:hover{
+  background-color: #d95333;
+}
+
+#footer{
+  text-align: center;
+  background-color: #222222;
+  padding: 30px;
+  color: #9D9E9E;
+}
+
+#footer a{
+  text-decoration: none;
+  color: #9D9E9E;
+}
+
+.sticky {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  opacity: 0.85;
+} /* klasa do nav */
